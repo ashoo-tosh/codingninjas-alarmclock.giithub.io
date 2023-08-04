@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="shortcut icon" href="./resources/alarm-clock-clipart-animated-9.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./alarm-clock.css">
+    
+</head>
+<body> 
+    <!-- analog style clock start -->
+    <div class="clock">
+    <div class="wrap">
+        <span id="hour-hand"></span>
+        <span id="minute-hand"></span>
+        <span id="second-hand"></span>
+        <span id="dot"></span>
+    </div>
+    </div>
+    <!-- analog style clock ends -->
+
+    <br><br>
+    <hr>
+
+    <!-- alarm clock setting starts -->
+    <input id="alarmTime" type="datetime-local">
+    <button id="alarmButton" onclick="setAlarm(this);">Set Alarm</button>
+
+    <div id="alarmOptions" style="display: none;">
+        <button id="snooze" onclick="snooze();">Snooze 5 minutes</button>
+        <button id="stop" onclick="stopAlarm();">Stop Alarm</button>
+    </div>
+    
+
+    <!--  alarm clock setting ends -->
+
+   
+
+<script src="./alarm-clock.js"></script>    
+<script src="./alarm.js"></script>
+</body>
+</html>
+
+
+
